@@ -16,7 +16,7 @@ section() {
 
 section "LINUX SECURITY BASELINE"
 printf 'Fecha: %s\n' "$(date)"
-printf 'Equipo: %s\n' "$(hostname 2>/dev/null || echo "No disponible")'
+printf 'Equipo: %s\n' "$(hostname 2>/dev/null || echo "No disponible")"
 printf 'Usuario: %s\n' "$(id -un 2>/dev/null || echo "No disponible")"
 
 section "1. IDENTIDAD Y PRIVILEGIOS"
